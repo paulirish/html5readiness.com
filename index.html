@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=8;chrome=1" >
+  
+  <title>HTML5 Readiness</title>
+    
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="A Visualization of how ready different parts of HTML5/CSS3 are for day to day use">
+  <meta name="author" content="Divya Manian" >
+
+	<!--iPhone/iPad/Opera Mobile Viewport Fix: 
+	
+	device-width : Make sure webpages occupy full width of the screen in its current orientation (portrait or landscape)
+	initial-scale = 1.0 retains dimensions of the page instead of zooming out if page height is larger than device height
+	maximum-scale = 1.0 retains dimensions of the page instead of zooming in if page width is smaller than device width
+	  
+  More at: http://j.mp/mobileviewport
+	 -->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" >
+	
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="" >
+
+	<!-- iPhone/iPad Icon -->
+	<link rel="apple-touch-icon" href="" >	
+  
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" >
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" >
+	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" > 
+	                         
+  <!-- For the less-enabled mobile browsers like Opera Mini -->	
+	<link rel="stylesheet" type="text/css" media="handheld" href="css/mobile.css" > 	
+      
+	
+  <!-- JavaScript at the bottom -->
+
+  
+  <script type="text/javascript">
+  // http://paulirish.com/2009/avoiding-the-fouc-v3/ && http://remysharp.com/2009/01/07/html5-enabling-script
+  // alternatively using Moderizr does both of these.
+  (function(B,C){B[C]=B[C].replace(/\bno-js\b/,'js');if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})(document.documentElement,'className');
+  </script>
+  
+</head>
+<!--[if lt IE 7 ]> <body class="ie6 "> <![endif]--> 
+<!--[if IE 7 ]>    <body class="ie7 "> <![endif]--> 
+<!--[if IE 8 ]>    <body class="ie8 "> <![endif]--> 
+<!--[if !IE]><!--> <body> <!--<![endif]-->
+
+
+  <div id="container">
+    <div id="header">
+        <h1>HTML5</h1> 
+				<ul>
+					<li><b class="ie7"></b> IE 7</li>
+					<li><b class="ie8"></b> IE 8</li>					
+					<li><b class="ie9"></b> IE 9</li>					
+					<li><b class="sa"></b> Safari 4</li>
+					<li><b class="ch"></b> Chrome 4</li>
+					<li><b class="ff36"></b> Firefox 3.6</li>
+					<li><b class="ff37"></b> Firefox 3.7</li>																				
+					<li><b class="op"></b> Opera</li>
+				</ul>
+    </div>
+    <div id="body">
+			<div class="css-chart"> 
+				<p class="ray-1"><b class="ff36"></b><b class="ff37"></b><b class="op"></b><b class="sa"></b><b class="ch"></b><i>Multiple Backgrounds</i></p>				
+				<p class="ray-2"><b class="ff36"></b><b class="ff37"></b><b class="op"></b><b class="sa"></b><b class="ch"></b><i>Media Queries</i></p>				
+				<p class="ray-3"><b class="ie9"></b><b class="ff36"></b><b class="ff37"></b><b class="op"></b><b class="sa"></b><b class="ch"></b><i>Border Radius</i></p>
+				<p class="ray-4"><b class="ff36"></b><b class="ff37"></b><b class="op"></b><b class="sa"></b><b class="ch"></b><i>Border Image</i></p>
+				<p class="ray-5"><b class="ie7"></b><b class="ie8"></b><b class="ie9"></b><b class="ff36"></b><b class="ff37"></b><b class="op"></b><b class="sa"></b><b class="ch"></b><i>@font-face</i></p>				
+				<p class="ray-6"><b class="ff36"></b><b class="ff37"></b></b><b class="sa"></b><b class="ch"></b><i>Flex Box Layout</i></p>
+				<p class="ray-7"><b class="ff36"></b><b class="ff37"></b></b><b class="sa"></b><b class="ch"></b><i>Multiple Column Layout</i></p>
+				<p class="ray-8"><b class="ff36"></b><b class="ff37"></b><b class="op"></b><b class="sa"></b><b class="ch"></b><i>Transforms</i></p>
+				<p class="ray-9"><b class="ff37"></b><b class="op"></b><b class="sa"></b><b class="ch"></b><i>SVG as Background</i></p>
+				<p class="ray-10"><b class="sa"></b><b class="ch"></b><i>Animations</i></p>
+				<span></span>
+			</div>
+    </div>
+    <div id="footer">
+
+    </div>
+  </div>
+
+
+
+
+  <!-- JavaScript -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <!--[if lt IE 7 ]>
+    <script type="text/javascript" src="js/dd_belatedpng.js" ></script>	
+  <![endif]-->
+  
+  <!-- yui profiler and profileviewer - remove for production -->
+  
+  <script type="text/javascript" src="js/profiling/yahoo-profiling.min.js"></script> 
+  <script  type="text/javascript" src="js/profiling/config.js"></script> 
+  <!-- end profiling code -->
+  
+  
+</body>
+</html>

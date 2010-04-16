@@ -1,0 +1,153 @@
+body {     
+  background: #51545b;
+  background-image: -moz-linear-gradient(top, #51545b, #78909c); /* FF3.6 */
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #51545b),color-stop(1, #78909c)); /* Saf4+, Chrome */  
+  color: #f2efde; 
+}
+
+
+p { 
+  display: block; 
+  position: absolute;  
+  bottom: 0;
+  left: 482px;
+  background: rgba(74, 65, 70, 0.1); 
+  width: 277px; 
+  height: 20px; 
+  padding-left: 205px;      
+  border: 0;
+  -webkit-transition: background 0.4s linear;  
+}    
+
+p:hover {
+  background: rgba(74, 65, 70, 1);   
+}
+
+p i { 
+  opacity: 0; 
+  display: block; 
+  position: absolute; 
+  bottom: 0; 
+  right: 100px; 
+  width: 150px; 
+  height: auto; 
+  background: #000; 
+  color: #f2efde; 
+  z-index: 2; 
+  padding: 0.5em; 
+  text-align: center; 
+  border-radius: 0.5em; 
+  -webkit-border-radius: 0.5em; 
+  -moz-border-radius: 0.5em; 
+  box-shadow: 5px 5px 0px #000;    
+  -webkit-transition: opacity 0.4s linear;
+} 
+
+p:hover i {   
+  opacity: 1; 
+}
+ 
+
+div.css-chart { 
+  -webkit-mask-image: url(../assets/clip.png); 
+  background-image: -webkit-gradient(radial, 482 482, 200, 480 484, 250, from(rgba(90,100, 112, 0.3)), to(rgba(0,0,0,0)));
+  margin: 10em auto 0 auto; 
+  width: 964px; 
+  height: 494px; 
+  position: relative; 
+  overflow:hidden; 
+  margin-bottom: 10em;
+}
+                       
+p b {
+  width: 12.5%;
+  display: block;
+  height: 20px;
+  float: left;
+}              
+
+b.ie7 { background: rgba(222, 146, 159, 0.6); }              
+b.ie8 { background: rgba(131, 72, 92, 0.6); }
+b.ie9 { background: rgba(233, 83, 120, 0.6); }
+b.ff36 { background: rgba(130, 197, 216, 0.6); }
+b.ff37 { background: rgba(69, 167, 203, 0.6); }
+b.op { background: rgba(226, 79, 45, 0.6); }
+b.ch { background: rgba(245, 155, 58, 0.6); }
+b.sa { background: rgba(251, 231, 98, 0.6); }  
+
+ul { position: fixed; top: 40px; left: 40px; }
+ul li { vertical-align: middle; list-style: none; padding: 0 0 0.5em 0;}
+li b { display: inline-block; width: 40px; height: 20px; }
+
+.ray-1 { -webkit-transform: rotate(0deg); -webkit-transform-origin: 0% 0% }       
+
+.ray-2 i { -webkit-transform: rotate(20deg); }
+.ray-2 { -webkit-transform: rotate(-20deg); -webkit-transform-origin: 0% 0% }       
+
+.ray-2 i { -webkit-transform: rotate(20deg); } 
+
+.ray-3 { -webkit-transform: rotate(-40deg) translate(0px, 0px) skew(0deg, 0deg); -webkit-transform-origin: 0% 0% }       
+
+.ray-3 i { -webkit-transform: rotate(40deg); } 
+
+.ray-4 { -webkit-transform: rotate(-60deg) translate(0px, 0px) skew(0deg, 0deg); -webkit-transform-origin: 0% 0% }        
+
+.ray-4 i { -webkit-transform: rotate(60deg); } 
+
+.ray-5 { -webkit-transform: rotate(-80deg) translate(0px, 0px) skew(0deg, 0deg); -webkit-transform-origin: 0% 0% }        
+
+.ray-5 i { -webkit-transform: rotate(80deg); } 
+
+.ray-6 { -webkit-transform: rotate(-100deg) translate(0px, 0px) skew(0deg, 0deg); -webkit-transform-origin: 0% 0% }
+
+.ray-6 i { -webkit-transform: rotate(100deg); } 
+
+.ray-7 { -webkit-transform: rotate(-120deg) translate(0px, 0px) skew(0deg, 0deg); -webkit-transform-origin: 0% 0% }        
+
+.ray-7 i { -webkit-transform: rotate(120deg); } 
+
+.ray-8 { -webkit-transform: rotate(-140deg) translate(0px, 0px) skew(0deg, 0deg); -webkit-transform-origin: 0% 0% }        
+
+.ray-8 i { -webkit-transform: rotate(140deg); } 
+
+.ray-9 { -webkit-transform: rotate(-160deg) translate(0px, 0px) skew(0deg, 0deg); -webkit-transform-origin: 0% 0% }        
+
+.ray-9 i { -webkit-transform: rotate(160deg); } 
+
+.ray-10 { -webkit-transform: rotate(-180deg) translate(0px, 0px) skew(0deg, 0deg); -webkit-transform-origin: 0% 0% }        
+
+.ray-10 i { -webkit-transform: rotate(180deg); } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; } /* http://twitter.com/miketaylr/status/12228805301 */
+/* http://j.mp/webkit-tap-highlight-color */
+a:link { -webkit-tap-highlight-color: #FF5E99; } 
+
+
+@media all and (orientation:portrait) { 
+  /* Style adjustments for portrait mode goes here */
+}
+
+@media all and (orientation:landscape) { 
+  /* Style adjustments for landscape mode goes here */
+}
+
+@media screen and (max-device-width: 480px) {
+  /* All Capable Mobile Browser (Opera Mobile, iPhone Safari, Android Chrome) CSS goes here */
+  html { -webkit-text-size-adjust:none; } /* Prevent iPhone from adjusting font size */
+}
