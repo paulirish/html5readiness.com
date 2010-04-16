@@ -1,0 +1,169 @@
+=transform($deg, $x, $y)
+  -webkit-transform: rotate($deg)
+  -o-transform: rotate($deg)
+  -moz-transform: rotate($deg)  
+  +transform-origin($x, $y)
+
+=transform-origin($x, $y)
+  -webkit-transform-origin: $x $y
+  -moz-transform-origin: $x $y
+  -o-transform-origin: $x $y  
+
+=border-radius($rad)
+  border-radius: $rad
+  -webkit-border-radius: $rad
+  -moz-border-radius: $rad
+
+$barheight = 23px
+
+body
+  background: #78909c
+  background-image: -moz-linear-gradient(top, #51545b, #78909c)
+  /* FF3.6
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #51545b), color-stop(1, #78909c))
+  /* Saf4+, Chrome
+  color: #f2efde
+
+div.css-chart p
+  display: block
+  position: absolute
+  bottom: 30px
+  left: 482px
+  background: rgba(74, 65, 70, 0.1)
+  width: 282px
+  height: $barheight
+  padding-left: 200px
+  border: 0
+  -webkit-transition: background 0.2s ease-out
+  &:hover
+    background: rgba(74, 65, 70, 1)
+    
+  &.css3
+    background: rgba(63, 50, 30, 0.1)
+    &:hover
+      background: rgba(63, 50, 30, 1)
+    
+  i
+    opacity: 0           
+    position: absolute
+    top: 0
+    right: 284px
+    width: 400px 
+    z-index: 4
+    display: block           
+    height: auto
+    color: #f2efde
+    padding: 10px
+    text-align: center  
+    +border-radius(0.5em)          
+    text-shadow: 1px 1px 1px #000
+    -webkit-transition: opacity 0.2s ease-out
+    text-transform: uppercase
+    font-size: 18px
+    
+  &:hover i,
+  &:focus i
+    opacity: 1
+               
+  b
+    width: 12.5%
+    display: block
+    height: $barheight
+    float: left 
+  
+
+div.css-chart
+  background-image: -webkit-gradient(radial, 482 482, 250, 480 484, 400, from(rgba(90, 100, 112, 0.5)), to(rgba(0, 0, 0, 0)))
+  margin: 5em auto 0 auto
+  width: 964px
+  height: 494px
+  position: relative
+  overflow: hidden
+  margin-bottom: 15em
+
+
+b
+  &.ie7
+    background: rgba(222, 146, 159, 0.6)
+  &.ie8
+    background: rgba(131, 72, 92, 0.6)
+  &.ie9
+    background: rgba(233, 83, 120, 0.6)
+  &.ff35
+    background: rgba(130, 197, 216, 0.6)
+  &.ff37
+    background: rgba(69, 167, 203, 0.6)
+  &.op
+    background: rgba(226, 79, 45, 0.6)
+  &.ch
+    background: rgba(245, 155, 58, 0.6)
+  &.sa
+    background: rgba(251, 231, 98, 0.6)
+
+ul
+  position: fixed
+  top: 40px
+  left: 40px
+  width: 400px
+  li
+    list-style: none
+    padding: 0 0 0.5em 0
+    width: 200px
+    float: left
+
+li b
+  display: inline-block
+  width: 20px
+  height: 20px
+  +border-radius(20em)
+  
+ 
+@for $i from 1 to 29
+  .ray-#{$i}
+    +transform((-6.7deg*($i - 1)), 0%, 50%) 
+   
+    i
+      +transform((6.7deg*($i - 1)), 50%, 50%)     
+
+#header
+  h1
+    text-align: center
+    text-transform: uppercase 
+    font-size: 2em
+    font-weight: bold
+    margin: 1em
+
+#footer
+  position: fixed
+  bottom: 10px
+  left: 0
+  width: 100%
+  p
+    text-align: center
+    text-transform: uppercase
+  
+\:
+  &:-moz-selection, &:selection
+    background: #ff5e99
+    color: white
+    text-shadow: none
+
+/* http://twitter.com/miketaylr/status/12228805301
+/* http://j.mp/webkit-tap-highlight-color
+
+a:link
+  -webkit-tap-highlight-color: #ff5e99
+
+@media all and (orientation:portrait)
+  /* Style adjustments for portrait mode goes here
+
+
+@media all and (orientation:landscape)
+  /* Style adjustments for landscape mode goes here
+
+
+@media screen and (max-device-width: 480px)
+  /* All Capable Mobile Browser (Opera Mobile, iPhone Safari, Android Chrome) CSS goes here
+  html
+    -webkit-text-size-adjust: none
+  /* Prevent iPhone from adjusting font size
