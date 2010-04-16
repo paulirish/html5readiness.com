@@ -1,14 +1,17 @@
-body { background: #78909c; background-image: -moz-linear-gradient(top, #51545b, #78909c); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #51545b), color-stop(1, #78909c)); /* Saf4+, Chrome */ color: #f2efde; }
+html{
+  background: #78909C; } 
+
+body,html { background: #78909c; background-image: -moz-linear-gradient(top, #51545b, #78909c); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #51545b), color-stop(1, #78909c)); /* Saf4+, Chrome */ color: #f2efde; }
 
 div.css-chart p { display: block; position: absolute; bottom: 30px; left: 482px; background: rgba(74, 65, 70, 0.1); width: 282px; height: 23px; padding-left: 200px; border: 0; -webkit-transition: background 0.2s ease-out; }
 div.css-chart p:hover { background: #4a4146; }
 div.css-chart p.css3 { background: rgba(63, 50, 30, 0.1); }
 div.css-chart p.css3:hover { background: #3f321e; }
-div.css-chart p i { opacity: 0; position: absolute; top: 0; right: 284px; width: 400px; z-index: 4; display: block; height: auto; color: #f2efde; padding: 10px; text-align: center; border-radius: 0.5em; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; text-shadow: 1px 1px 1px black; -webkit-transition: opacity 0.2s ease-out; text-transform: uppercase; font-size: 18px; }
+div.css-chart p i { opacity: 0; position: absolute; top: 0; right: 284px; width: 400px; z-index: 4; display: block; height: auto; color: #f2efde; padding: 10px; text-align: center; border-radius: 0.5em; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; text-shadow: 1px 1px 2px black; -webkit-transition: opacity 0.2s ease-out; text-transform: uppercase; font-size: 28px; font-style:normal;}
 div.css-chart p:hover i, div.css-chart p:focus i { opacity: 1; }
 div.css-chart p b { width: 12.5%; display: block; height: 23px; float: left; }
 
-div.css-chart { background-image: -webkit-gradient(radial, 482 482, 250, 480 484, 400, from(rgba(90, 100, 112, 0.5)), to(rgba(0, 0, 0, 0))); margin: 5em auto 0 auto; width: 964px; height: 494px; position: relative; overflow: hidden; margin-bottom: 15em; }
+div.css-chart { background-image: -webkit-gradient(radial, 482 482, 250, 480 484, 400, from(rgba(90, 100, 112, 0.5)), to(rgba(0, 0, 0, 0))); margin: -3em auto 0 auto; width: 964px; height: 540px; position: relative; overflow: hidden; }
 
 b.ie7 { background: rgba(222, 146, 159, 0.6); }
 b.ie8 { background: rgba(131, 72, 92, 0.6); }
@@ -19,7 +22,7 @@ b.op { background: rgba(226, 79, 45, 0.6); }
 b.ch { background: rgba(245, 155, 58, 0.6); }
 b.sa { background: rgba(251, 231, 98, 0.6); }
 
-ul { position: fixed; top: 40px; left: 40px; width: 400px; }
+ul { position: fixed; top: 40px; left: 40px; width: 108px; }
 ul li { list-style: none; padding: 0 0 0.5em 0; width: 200px; float: left; }
 
 li b { display: inline-block; width: 20px; height: 20px; border-radius: 20em; -webkit-border-radius: 20em; -moz-border-radius: 20em; }
