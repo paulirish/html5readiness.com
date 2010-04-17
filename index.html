@@ -103,7 +103,29 @@
     </div>
   </div>
   <!-- JavaScript -->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  
+  
+
+  <script> 
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-15901079-1']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_setDomainName','none']);
+    _gaq.push(['_setAllowLinker','true']);
+
+    (function() {
+      var ga = document.createElement('script'),
+          elem = document.head || document.documentElement;   // FUCK YAH UNIMPLEMENTED HTML5 HAWTNESS
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 
+          'http://www') + '.google-analytics.com/ga.js';
+      ga.setAttribute('async', 'true');
+      setTimeout(function(){ elem.insertBefore(ga, elem.firstChild); },100);
+    })();
+
+  </script>
+  
+  
 </body>
 </html>
