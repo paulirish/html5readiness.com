@@ -1,6 +1,6 @@
 jQuery(document).bind('DOMMouseScroll mousewheel', function(e, delta) {
 
-    //return();
+    //return;
     var newval,
         num = $('div.css-chart p').css('padding-left');
 
@@ -15,7 +15,7 @@ jQuery(document).bind('DOMMouseScroll mousewheel', function(e, delta) {
     }
     
     $('style.padleft').remove();
-    $('<style class="padleft"> div.css-chart p { padding-left : '+newval+'px; }</style>')
+    $('<style class="padleft"> div.css-chart p { padding-left : '+newval+'px; } div.css-chart p i { width : '+2*newval+'px; } </style>')
         .appendTo(document.body);
 
     e.preventDefault();
