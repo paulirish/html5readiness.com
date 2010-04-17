@@ -25,63 +25,75 @@ body
   /* FF3.6
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #51545b), color-stop(1, #78909c))
   /* Saf4+, Chrome
-  color: #f2efde
+  color: #f2efde 
+  font-family: "Gill Sans", Calibri, "DejaVu Sans", sans-serif  
 
-div.css-chart p
-  display: block
-  position: absolute
-  bottom: 30px
-  left: 482px
-  background: rgba(74, 65, 70, 0.1)
-  width: 282px
-  height: $barheight
-  padding-left: 200px
-  border: 0
-  -webkit-transition: background 0.2s ease-out
-  &:hover
-    background: rgba(74, 65, 70, 1)
-    
-  &.css3
-    background: rgba(63, 50, 30, 0.1)
-    &:hover
-      background: rgba(63, 50, 30, 1)
-    
-  i
-    opacity: 0           
-    position: absolute
-    top: 0
-    right: 284px
-    width: 400px 
-    z-index: 4
-    display: block           
-    height: auto
-    color: #f2efde
-    padding: 10px
-    text-align: center  
-    +border-radius(0.5em)          
-    text-shadow: 1px 1px 2px #000
-    -webkit-transition: opacity 0.2s ease-in
-    text-transform: uppercase
-    font-size: 28px
-    
-  &:hover i,
-  &:focus i
-    opacity: 1
-               
-  b
-    width: 12.5%
-    display: block
-    height: $barheight
-    float: left 
+a,
+a:visited,
+a:active
+  text-decoration: none
+  color: #000
+  font-weight: bold
+  font-size: 1em
+  -webkit-transition: color 0.3s linear
+  
+a:hover
+  color: rgb(251, 231, 98)
   
 
 div.css-chart
   background-image: -webkit-gradient(radial, 482 482, 250, 480 484, 400, from(rgba(90, 100, 112, 0.5)), to(rgba(0, 0, 0, 0)))
-  margin: -3em auto 0 auto
+  margin: 0 auto 0 auto
   width: 964px
   height: 540px
   position: relative
-  overflow: hidden
+
+  p
+    display: block
+    position: absolute
+    bottom: -10px
+    left: 482px
+    background: rgba(74, 65, 70, 0.1)
+    width: 282px
+    height: $barheight
+    border: 0
+    padding: 0 0 0 200px
+    -webkit-transition: background 0.2s ease-out
+    &:hover
+      background: rgba(74, 65, 70, 1)
+    
+    &.css3
+      background: rgba(74, 65, 70, 0.1)
+      &:hover
+        background: rgba(190, 211, 100, 1)
+    
+    i
+      opacity: 0           
+      position: absolute
+      top: 0
+      right: 284px
+      width: 400px 
+      z-index: 4
+      display: block           
+      height: auto
+      color: #f2efde
+      padding: 10px
+      text-align: center  
+      +border-radius(0.5em)          
+      text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000, 5px 5px 0px #000
+      -webkit-transition: opacity 0.2s ease-in
+      text-transform: uppercase
+      font-size: 28px
+    
+    &:hover i,
+    &:focus i
+      opacity: 1
+               
+    b
+      width: 12.5%
+      display: block
+      height: $barheight
+      float: left 
 
 
 b
@@ -111,7 +123,8 @@ ul
     list-style: none
     padding: 0 0 0.5em 0
     width: 200px
-    float: left
+    float: left  
+    text-transform: uppercase
 
 li b
   display: inline-block
@@ -131,9 +144,19 @@ li b
   h1
     text-align: center
     text-transform: uppercase 
-    font-size: 2em
+    font-size: 3em
     font-weight: bold
-    margin: 1em
+    margin: 0 1em
+    padding: 0.5em 0   
+    text-shadow: 1px 1px 10px rgba(233, 83, 120, 0.2), 1px 1px 8px rgba(222, 146, 159, 0.2), 1px 1px 6px rgba(222, 146, 159, 0.2), 1px 1px 4px rgba(233, 83, 120, 0.2), 1px 1px 2px rgba(222, 146, 159, 0.2)  
+    
+    b
+      color: rgb(54, 47, 52)
+      text-shadow: 1px 1px 10px rgba(233, 83, 120, 0.1), 1px 1px 8px rgba(222, 146, 159, 0.1), 1px 1px 6px rgba(222, 146, 159, 0.1), 1px 1px 4px rgba(233, 83, 120, 0.1), 1px 1px 2px rgba(222, 146, 159, 0.1)        
+    i
+      color: rgb(190, 211, 100) 
+      font-style: normal
+    
 
 #footer
   position: fixed
@@ -142,7 +165,8 @@ li b
   width: 100%
   p
     text-align: center
-    text-transform: uppercase
+    text-transform: uppercase 
+        
   
 \:
   &:-moz-selection, &:selection
