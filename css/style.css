@@ -25,7 +25,11 @@ b.op { background: rgba(226, 79, 45, 0.6); }
 b.ch { background: rgba(245, 155, 58, 0.6); }
 b.sa { background: rgba(251, 231, 98, 0.6); }
 
-ul { position: fixed; top: 40px; left: 40px; width: 108px; }
+
+ul,#header aside { position: fixed; top: 40px; left: 40px; width: 108px; z-index: 10; }
+#header aside { left: auto; right: 40px; width: 160px;}
+
+
 ul li { list-style: none; padding: 0 0 0.5em 0; width: 200px; float: left; text-transform: uppercase; }
 
 li b { display: inline-block; width: 20px; height: 20px; border-radius: 20em; -webkit-border-radius: 20em; -moz-border-radius: 20em; }
