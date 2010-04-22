@@ -14,6 +14,10 @@
   -webkit-border-radius: $rad
   -moz-border-radius: $rad
 
+=transition($property, $time, $rule)
+  -webkit-transition: unquote($property) unquote($time) unquote($rule)
+  -moz-transition: unquote($property) unquote($time) unquote($rule)
+  
 $barheight: 23px
 
 html
@@ -34,8 +38,8 @@ a:active
   text-decoration: none
   color: #000
   font-weight: bold
-  font-size: 1em
-  -webkit-transition: color 0.3s linear
+  font-size: 1em   
+  +transition("color", "0.2s", "linear")  
   
 a:hover
   color: rgb(251, 231, 98)
@@ -58,7 +62,9 @@ div.css-chart
     height: $barheight
     border: 0
     padding: 0 0 0 200px
-    -webkit-transition: background 0.2s ease-out
+    +transition("background", "0.2s", "ease-out")    
+
+    
     &:hover
       background: rgba(74, 65, 70, 1)
     
@@ -67,16 +73,18 @@ div.css-chart
       &:hover
         background: rgba(190, 211, 100, 0.2)
     
-    em
-      display: none
-      
-      .twenty10 &.twenty10,
-      .twenty09 &.twenty09,
-      .twenty08 &.twenty08
-        display: block
-         
-         
-      
+    em 
+      -webkit-transition: none
+
+      b              
+        opacity: 0    
+        +transition("opacity", "1s", "linear")
+                 
+      .twenty10 &.twenty10 b,
+      .twenty09 &.twenty09 b,
+      .twenty08 &.twenty08 b
+        opacity: 1
+        
     a
       display: block
       width: 100%
@@ -99,8 +107,8 @@ div.css-chart
       padding: 10px
       text-align: center  
       +border-radius(0.5em)          
-      text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000, 5px 5px 0px #000
-      -webkit-transition: opacity 0.2s ease-in
+      text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000, 5px 5px 0px #000   
+      +transition("opacity", "0.2s", "ease-in")      
       text-transform: uppercase
       font-size: 28px
 
@@ -116,25 +124,44 @@ div.css-chart
 
 
 b
+  &.ie6
+    background-color: rgba(218, 168, 192, 0.6)  
   &.ie7
-    background: rgba(222, 146, 159, 0.6)
+    background-color: rgba(222, 146, 159, 0.6)
   &.ie8
-    background: rgba(131, 72, 92, 0.6)
+    background-color: rgba(131, 72, 92, 0.6)
   &.ie9
-    background: rgba(233, 83, 120, 0.6)
+    background-color: rgba(233, 83, 120, 0.6)
+  
+  &.ff20   
+    background-color: rgba(66, 147, 194, 0.6)          
+  &.ff30
+    background-color: rgba(74, 188, 241, 0.6)    
   &.ff35
-    background: rgba(130, 197, 216, 0.6)
-  &.ff37,
-  &.sa32
-    background: rgba(69, 167, 203, 0.6)
+    background-color: rgba(59, 144, 175, 0.6)
+  &.ff37
+    background-color: rgba(69, 167, 203, 0.6)  
+  
+  &.op95                               
+    background-color: rgba(161, 45, 13, 0.6)
+    
+  &.op96                                
+    background-color: rgba(197, 46, 16, 0.6)  
+  
   &.op
-    background: rgba(226, 79, 45, 0.6)
-  &.ch,
-  &.ch2
-    background: rgba(245, 155, 58, 0.6)
-  &.sa,
+    background-color: rgba(226, 79, 45, 0.6)
+  
+  &.ch2                                
+    background-color: rgba(207, 133, 27, 0.6)  
+  &.ch
+    background-color: rgba(245, 155, 58, 0.6)
+
   &.sa31
-    background: rgba(251, 231, 98, 0.6)
+    background-color: rgba(190, 183, 64, 0.6)    
+  &.sa32  
+    background-color: rgba(216, 184, 73, 0.6)    
+  &.sa
+    background-color: rgba(251, 231, 98, 0.6) 
 
 ul
   position: fixed

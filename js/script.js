@@ -20,4 +20,6 @@ jQuery(document).bind('DOMMouseScroll mousewheel', function(e, delta) {
 
     e.preventDefault();
 
-})
+});
+
+jQuery("h1 a").click(function() { $("#container").removeClass().addClass($(this).attr("title")); })

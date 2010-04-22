@@ -2,30 +2,39 @@ html { background: #78909c; }
 
 body { background: #78909c; background-image: -moz-linear-gradient(top, #51545b, #78909c); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #51545b), color-stop(1, #78909c)); /* Saf4+, Chrome */ color: #f2efde; font-family: "Gill Sans", Calibri, "DejaVu Sans", sans-serif; }
 
-a, a:visited, a:active { text-decoration: none; color: black; font-weight: bold; font-size: 1em; -webkit-transition: color 0.3s linear; }
+a, a:visited, a:active { text-decoration: none; color: black; font-weight: bold; font-size: 1em; -webkit-transition: color 0.2s linear; -moz-transition: color 0.2s linear; }
 
 a:hover { color: #fbe762; }
 
 div.css-chart { background-image: -webkit-gradient(radial, 482 482, 250, 480 484, 400, from(rgba(90, 100, 112, 0.5)), to(rgba(0, 0, 0, 0))); margin: 0 auto 0 auto; width: 964px; height: 530px; position: relative; }
-div.css-chart p { display: block; position: absolute; bottom: -10px; left: 482px; background: rgba(74, 65, 70, 0.1); width: 282px; height: 23px; border: 0; padding: 0 0 0 200px; -webkit-transition: background 0.2s ease-out; }
+div.css-chart p { display: block; position: absolute; bottom: -10px; left: 482px; background: rgba(74, 65, 70, 0.1); width: 282px; height: 23px; border: 0; padding: 0 0 0 200px; -webkit-transition: background 0.2s ease-out; -moz-transition: background 0.2s ease-out; }
 div.css-chart p:hover { background: #4a4146; }
 div.css-chart p.css3 { background: rgba(74, 65, 70, 0.1); }
 div.css-chart p.css3:hover { background: rgba(190, 211, 100, 0.2); }
-div.css-chart p em { display: none; }
-.twenty10 div.css-chart p em.twenty10, .twenty09 div.css-chart p em.twenty09, .twenty08 div.css-chart p em.twenty08 { display: block; }
+div.css-chart p em { -webkit-transition: none; }
+div.css-chart p em b { opacity: 0; -webkit-transition: opacity 1s linear; -moz-transition: opacity 1s linear; }
+.twenty10 div.css-chart p em.twenty10 b, .twenty09 div.css-chart p em.twenty09 b, .twenty08 div.css-chart p em.twenty08 b { opacity: 1; }
 div.css-chart p a { display: block; width: 100%; height: 100%; font-weight: normal; -webkit-transition: none; cursor: default !important; }
-div.css-chart p i { opacity: 0; position: absolute; top: 0; right: 284px; width: 400px; z-index: 4; display: block; height: auto; color: #f2efde; padding: 10px; text-align: center; border-radius: 0.5em; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; text-shadow: 1px 1px 0 black, 2px 2px 0 black, 3px 3px 0 black, 4px 4px 0 black, 5px 5px 0px black; -webkit-transition: opacity 0.2s ease-in; text-transform: uppercase; font-size: 28px; }
+div.css-chart p i { opacity: 0; position: absolute; top: 0; right: 284px; width: 400px; z-index: 4; display: block; height: auto; color: #f2efde; padding: 10px; text-align: center; border-radius: 0.5em; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; text-shadow: 1px 1px 0 black, 2px 2px 0 black, 3px 3px 0 black, 4px 4px 0 black, 5px 5px 0px black; -webkit-transition: opacity 0.2s ease-in; -moz-transition: opacity 0.2s ease-in; text-transform: uppercase; font-size: 28px; }
 div.css-chart p:hover i { opacity: 1; }
 div.css-chart p b { width: 12.5%; display: block; height: 23px; float: left; }
 
-b.ie7 { background: rgba(222, 146, 159, 0.6); }
-b.ie8 { background: rgba(131, 72, 92, 0.6); }
-b.ie9 { background: rgba(233, 83, 120, 0.6); }
-b.ff35 { background: rgba(130, 197, 216, 0.6); }
-b.ff37, b.sa32 { background: rgba(69, 167, 203, 0.6); }
-b.op { background: rgba(226, 79, 45, 0.6); }
-b.ch, b.ch2 { background: rgba(245, 155, 58, 0.6); }
-b.sa, b.sa31 { background: rgba(251, 231, 98, 0.6); }
+b.ie6 { background-color: rgba(218, 168, 192, 0.6); }
+b.ie7 { background-color: rgba(222, 146, 159, 0.6); }
+b.ie8 { background-color: rgba(131, 72, 92, 0.6); }
+b.ie9 { background-color: rgba(233, 83, 120, 0.6); }
+b.ff20 { background-color: rgba(66, 147, 194, 0.6); }
+b.ff30 { background-color: rgba(74, 188, 241, 0.6); }
+b.ff35 { background-color: rgba(59, 144, 175, 0.6); }
+b.ff37 { background-color: rgba(69, 167, 203, 0.6); }
+b.op95 { background-color: rgba(161, 45, 13, 0.6); }
+b.op96 { background-color: rgba(197, 46, 16, 0.6); }
+b.op { background-color: rgba(226, 79, 45, 0.6); }
+b.ch2 { background-color: rgba(207, 133, 27, 0.6); }
+b.ch { background-color: rgba(245, 155, 58, 0.6); }
+b.sa31 { background-color: rgba(190, 183, 64, 0.6); }
+b.sa32 { background-color: rgba(216, 184, 73, 0.6); }
+b.sa { background-color: rgba(251, 231, 98, 0.6); }
 
 ul { position: fixed; top: 40px; left: 40px; width: 108px; }
 ul li { list-style: none; padding: 0 0 0.5em 0; width: 200px; float: left; text-transform: uppercase; }
