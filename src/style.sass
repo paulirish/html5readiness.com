@@ -74,16 +74,21 @@ div.css-chart
         background: rgba(190, 211, 100, 0.2)
     
     em 
-      -webkit-transition: none
-
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height = $barheight
+      
       b              
         opacity: 0    
-        +transition("opacity", "1s", "linear")
+        +transition("opacity", "1s", "ease-in")        
                  
-      .twenty10 &.twenty10 b,
-      .twenty09 &.twenty09 b,
-      .twenty08 &.twenty08 b
-        opacity: 1
+      .twenty10 &.twenty10,
+      .twenty09 &.twenty09,
+      .twenty08 &.twenty08
+        b
+          opacity: 1
         
     a
       display: block
@@ -91,7 +96,8 @@ div.css-chart
       height: 100%  
       font-weight: normal
       -webkit-transition: none 
-      cursor: default !important      
+      cursor: default !important
+      position: relative      
         
     
     i
