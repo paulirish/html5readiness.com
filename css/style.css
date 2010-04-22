@@ -2,20 +2,20 @@ html { background: #78909c; }
 
 body { background: #78909c; background-image: -moz-linear-gradient(top, #51545b, #78909c); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #51545b), color-stop(1, #78909c)); /* Saf4+, Chrome */ color: #f2efde; font-family: "Gill Sans", Calibri, "DejaVu Sans", sans-serif; }
 
-a, a:visited, a:active { text-decoration: none; color: black; font-weight: bold; font-size: 1em; -webkit-transition: color 0.2s linear; -moz-transition: color 0.2s linear; }
+a, a:visited, a:active { text-decoration: none; color: black; font-weight: bold; font-size: 1em; -webkit-transition: color 0.2s linear; -moz-transition: color 0.2s linear; -o-transition: color 0.2s linear; }
 
 a:hover { color: #fbe762; }
 
 div.css-chart { background-image: -webkit-gradient(radial, 482 482, 250, 480 484, 400, from(rgba(90, 100, 112, 0.5)), to(rgba(0, 0, 0, 0))); margin: 0 auto 0 auto; width: 964px; height: 530px; position: relative; }
-div.css-chart p { display: block; position: absolute; bottom: -10px; left: 482px; background: rgba(74, 65, 70, 0.1); width: 282px; height: 23px; border: 0; padding: 0 0 0 200px; -webkit-transition: background 0.2s ease-out; -moz-transition: background 0.2s ease-out; }
+div.css-chart p { display: block; position: absolute; bottom: -10px; left: 482px; background: rgba(74, 65, 70, 0.1); width: 282px; height: 23px; border: 0; padding: 0 0 0 200px; -webkit-transition: background 0.2s ease-out; -moz-transition: background 0.2s ease-out; -o-transition: background 0.2s ease-out; }
 div.css-chart p:hover { background: #4a4146; }
 div.css-chart p.css3 { background: rgba(74, 65, 70, 0.1); }
 div.css-chart p.css3:hover { background: rgba(190, 211, 100, 0.2); }
 div.css-chart p em { position: absolute; bottom: 0; left: 0; width: 100%; height: 23px; }
-div.css-chart p em b { opacity: 0; -webkit-transition: opacity 1s ease-in; -moz-transition: opacity 1s ease-in; }
+div.css-chart p em b { opacity: 0; -webkit-transition: opacity 1s ease-in; -moz-transition: opacity 1s ease-in; -o-transition: opacity 1s ease-in; }
 .twenty10 div.css-chart p em.twenty10 b, .twenty09 div.css-chart p em.twenty09 b, .twenty08 div.css-chart p em.twenty08 b { opacity: 1; }
 div.css-chart p a { display: block; width: 100%; height: 100%; font-weight: normal; -webkit-transition: none; cursor: default !important; position: relative; }
-div.css-chart p i { opacity: 0; position: absolute; top: 0; right: 284px; width: 400px; z-index: 4; display: block; height: auto; color: #f2efde; padding: 10px; text-align: center; border-radius: 0.5em; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; text-shadow: 1px 1px 0 black, 2px 2px 0 black, 3px 3px 0 black, 4px 4px 0 black, 5px 5px 0px black; -webkit-transition: opacity 0.2s ease-in; -moz-transition: opacity 0.2s ease-in; text-transform: uppercase; font-size: 28px; }
+div.css-chart p i { opacity: 0; position: absolute; top: 0; right: 284px; width: 400px; z-index: 4; display: block; height: auto; color: #f2efde; padding: 10px; text-align: center; border-radius: 0.5em; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; text-shadow: 1px 1px 0 black, 2px 2px 0 black, 3px 3px 0 black, 4px 4px 0 black, 5px 5px 0px black; -webkit-transition: opacity 0.2s ease-in; -moz-transition: opacity 0.2s ease-in; -o-transition: opacity 0.2s ease-in; text-transform: uppercase; font-size: 28px; }
 div.css-chart p:hover i { opacity: 1; }
 div.css-chart p b { width: 12.5%; display: block; height: 23px; float: left; }
 
