@@ -174,13 +174,24 @@ ul
   position: fixed
   top: 40px
   left: 40px
-  width: 108px
+  width: 108px 
+  
+  li li
+    opacity: 0
+    +transition("opacity", "1s", "ease-in") 
+  
   li
     list-style: none
     padding: 0 0 0.5em 0
     width: 200px
     float: left  
-    text-transform: uppercase
+    text-transform: uppercase 
+    
+  .twenty10 & .twenty10 li,
+  .twenty09 & .twenty09 li,
+  .twenty08 & .twenty08 li
+    opacity: 1
+
 
 li b
   display: inline-block

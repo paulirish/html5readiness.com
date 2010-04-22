@@ -37,7 +37,9 @@ b.sa32 { background-color: rgba(216, 184, 73, 0.6); }
 b.sa { background-color: rgba(251, 231, 98, 0.6); }
 
 ul { position: fixed; top: 40px; left: 40px; width: 108px; }
+ul li li { opacity: 0; -webkit-transition: opacity 1s ease-in; -moz-transition: opacity 1s ease-in; -o-transition: opacity 1s ease-in; }
 ul li { list-style: none; padding: 0 0 0.5em 0; width: 200px; float: left; text-transform: uppercase; }
+.twenty10 ul .twenty10 li, .twenty09 ul .twenty09 li, .twenty08 ul .twenty08 li { opacity: 1; }
 
 li b { display: inline-block; width: 20px; height: 20px; border-radius: 20em; -webkit-border-radius: 20em; -moz-border-radius: 20em; }
 
