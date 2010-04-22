@@ -66,13 +66,24 @@ div.css-chart
       background: rgba(74, 65, 70, 0.1)
       &:hover
         background: rgba(190, 211, 100, 0.2)
-        
+    
+    em
+      display: none
+      
+      .twenty10 &.twenty10,
+      .twenty09 &.twenty09,
+      .twenty08 &.twenty08
+        display: block
+         
+         
+      
     a
       display: block
       width: 100%
       height: 100%  
       font-weight: normal
-      -webkit-transition: none       
+      -webkit-transition: none 
+      cursor: default !important      
         
     
     i
@@ -113,13 +124,16 @@ b
     background: rgba(233, 83, 120, 0.6)
   &.ff35
     background: rgba(130, 197, 216, 0.6)
-  &.ff37
+  &.ff37,
+  &.sa32
     background: rgba(69, 167, 203, 0.6)
   &.op
     background: rgba(226, 79, 45, 0.6)
-  &.ch
+  &.ch,
+  &.ch2
     background: rgba(245, 155, 58, 0.6)
-  &.sa
+  &.sa,
+  &.sa31
     background: rgba(251, 231, 98, 0.6)
 
 ul
@@ -164,7 +178,13 @@ li b
     i
       color: rgb(190, 211, 100) 
       font-style: normal
-    
+                            
+  aside
+    position: fixed
+    top: 40px
+    right: 40px
+    width: 160px  
+    z-index: 10
 
 #footer
   margin-top: 5em
