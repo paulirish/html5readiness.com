@@ -22,4 +22,8 @@ jQuery(document).bind('DOMMouseScroll mousewheel', function(e, delta) {
 
 });
 
-jQuery("h1 a").click(function() { $("#container").removeClass().addClass($(this).attr("title")); })
+jQuery("h3 a").click(function() { 
+    $(this).siblings().andSelf().removeClass('selected').end().end().addClass('selected');
+    $("#container").removeClass().addClass($(this).attr("title")); 
+    return false;
+}).last().click();
