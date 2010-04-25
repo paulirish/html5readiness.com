@@ -2,7 +2,7 @@ html { background: #78909c; }
 
 body { background: #78909c; background-image: -moz-linear-gradient(top, #51545b, #78909c); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #51545b), color-stop(1, #78909c)); /* Saf4+, Chrome */ color: #f2efde; font-family: "Gill Sans", Calibri, "DejaVu Sans", sans-serif; }
 
-a, a:visited, a:active { text-decoration: none; color: black; font-weight: bold; font-size: 1em; -webkit-transition: "color" "0.2s" "linear"; -moz-transition: "color" "0.2s" "linear"; -o-transition: "color" "0.2s" "linear"; }
+a, a:visited, a:active { text-decoration: none; color: black; font-weight: bold; font-size: 1em; -webkit-transition: color 0.2s linear; -moz-transition: color 0.2s linear; -o-transition: color 0.2s linear; }
 
 a:hover, a.selected { color: #fbe762; }
 
