@@ -134,7 +134,7 @@ li b { display: inline-block; width: 20px; height: 20px; border-radius: 20em; -w
 #header h3 a { text-shadow: none; }
 #header aside { position: fixed; top: 40px; right: 40px; width: 160px; z-index: 10; }
 
-#footer { margin-top: 5em; width: 100%; }
+#footer { margin-top:26px; width: 100%; }
 #footer p { text-align: center; text-transform: uppercase; }
 
 ::-moz-selection, ::selection { background: #ff5e99; color: white; text-shadow: none; }
