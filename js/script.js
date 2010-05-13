@@ -20,6 +20,7 @@ jQuery(document).bind('DOMMouseScroll mousewheel', function(e, delta) {
 
     e.preventDefault();
 
+
 });
 
 jQuery("h3 a").click(function() { 
@@ -27,3 +28,46 @@ jQuery("h3 a").click(function() {
     $("#container").removeClass().addClass($(this).attr("class")); 
     return false;
 }).last().click();
+
+
+
+// ill mark the ghost browsers with (o) under them
+// these are here only to make it easier to compare year to year.
+
+var twenty10 = ["ie7","ie8","ie9","ff35","ff37","op","sa","ch"].reverse();
+
+
+var twenty09 = ["ie6","ie7","ie8","ff20","ff30","op96","sa32","ch2"].reverse();
+
+
+var twenty08 = ["ie5","ie6","ie7","ff1","ff20","op95","sa31","chX"].reverse();
+//               (o)               (o)                        (o)
+
+function syncPositions(){
+  var rays = document.querySelectorAll(".css-chart > p em");
+  for (var i = 0; i < rays.length; i++) {
+    var ray = rays[i];
+    for (var j = 0; j < window[ray.className].length; j++) {
+      var curr = ray.children[j];
+      if (curr && curr.className != window[ray.className][j]) {
+        var b = document.createElement("b");
+        b.className = 'ghostorunsupported';
+        ray.insertBefore(b, curr);
+      }
+    }
+  }
+  
+  $('input:checkbox').change(function(){
+    $('.ghostorunsupported').toggle();
+  })
+}
+
+jQuery(function(){
+  
+  $('<label><input type="checkbox">Sync browser positions</label>')
+    .one('change',syncPositions).wrap('<p>').parent().appendTo('#footer');
+
+  
+})
+
+
