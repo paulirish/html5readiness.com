@@ -68,7 +68,7 @@ function syncPositions(){
 
 jQuery(function(){
   
-  $('<label><input type="checkbox">Sync browser positions</label>')
+  $('<label><input type="checkbox">Fixed browser positions</label>')
     .one('change',syncPositions).wrap('<p>').parent().appendTo('#footer');
 
   
