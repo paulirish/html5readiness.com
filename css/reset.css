@@ -121,6 +121,12 @@ td img { vertical-align:top; }
 .visuallyhidden { position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; } /* Hide only visually, but have it available for screenreaders http://www.webaim.org/techniques/css/invisiblecontent/ */
 .invisible { visibility: hidden; }
 
+
+
+
+.css-chart p a:focus,
+.css-chart p a:active { outline: 0;}
+
 /* 
 	===================================
 	>> CSS BUG HACKS <<
