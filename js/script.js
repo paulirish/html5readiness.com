@@ -32,7 +32,7 @@ jQuery("h3 a").click(function() {
 
 jQuery('.css-chart').delegate('a','click',function(){
   
-  var isTouch = "ontouchstart" in docElem || ("onMozTouchDown" in docElem && "multitouchdata" in document);
+  var isTouch = "ontouchstart" in document.documentElement || ("onMozTouchDown" in document.documentElement && "multitouchdata" in document);
   
   
   if (isTouch) return true;
