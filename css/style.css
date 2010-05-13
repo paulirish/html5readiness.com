@@ -155,7 +155,7 @@ div.css-chart p:hover { background: #4a4146; }
 div.css-chart p.css3 { background: rgba(74, 65, 70, 0.1); }
 div.css-chart p.css3:hover { background: rgba(190, 211, 100, 0.2); }
 div.css-chart p em { position: absolute; bottom: 0; left: 0; width: 100%; height: 23px; }
-div.css-chart p em b { opacity: 0; -webkit-transition: opacity 1s ease-in; -moz-transition: opacity 1s ease-in; -o-transition: opacity 1s ease-in; }
+div.css-chart p em b { opacity: 0; -webkit-transition: opacity .4s ease-in; -moz-transition: opacity .4s ease-in; -o-transition: opacity .4s ease-in; }
 .twenty10 div.css-chart p em.twenty10 b, .twenty09 div.css-chart p em.twenty09 b, .twenty08 div.css-chart p em.twenty08 b { opacity: 1; }
 div.css-chart p a { display: block; width: 100%; height: 100%; font-weight: normal; -webkit-transition: none; cursor: default !important; position: relative; }
 div.css-chart p i { opacity: 0; position: absolute; top: 0; right: 284px; width: 400px; z-index: 4; display: block; height: auto; color: #f2efde; padding: 10px; text-align: center; border-radius: 0.5em; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; text-shadow: 1px 1px 0 black, 2px 2px 0 black, 3px 3px 0 black, 4px 4px 0 black, 5px 5px 0px black; -webkit-transition: opacity 0.2s ease-in; -moz-transition: opacity 0.2s ease-in; -o-transition: opacity 0.2s ease-in; text-transform: uppercase; font-size: 28px; }
