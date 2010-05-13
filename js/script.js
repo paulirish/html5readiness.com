@@ -52,6 +52,8 @@ var twenty09 = ["ie6","ie7","ie8","ff20","ff30","op96","sa32","ch2"].reverse();
 var twenty08 = ["ie5","ie6","ie7","ff1","ff20","op95","sa31","chX"].reverse();
 //               (o)               (o)                        (o)
 
+
+// thx to deepak jois for all the smarts of this.
 function syncPositions(){
   var rays = document.querySelectorAll(".css-chart > p em");
   for (var i = 0; i < rays.length; i++) {
