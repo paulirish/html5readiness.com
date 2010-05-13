@@ -30,6 +30,10 @@ jQuery("h3 a").click(function() {
 }).last().click();
 
 
+jQuery('.css-chart').delegate('a','click',function(){
+  return false;
+})
+
 
 // ill mark the ghost browsers with (o) under them
 // these are here only to make it easier to compare year to year.
