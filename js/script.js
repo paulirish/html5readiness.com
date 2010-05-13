@@ -31,7 +31,11 @@ jQuery("h3 a").click(function() {
 
 
 jQuery('.css-chart').delegate('a','click',function(){
-  if (/iPod|iPad|iPhone/).test(navigator.userAgent)) return true;
+  
+  var isTouch = "ontouchstart" in docElem || ("onMozTouchDown" in docElem && "multitouchdata" in document);
+  
+  
+  if (isTouch) return true;
   return false;
 })
 
