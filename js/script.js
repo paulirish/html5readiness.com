@@ -31,6 +31,7 @@ jQuery("h3 a").click(function() {
 
 
 jQuery('.css-chart').delegate('a','click',function(){
+  if (/iPod|iPad|iPhone/).test(navigator.userAgent)) return true;
   return false;
 })
 
