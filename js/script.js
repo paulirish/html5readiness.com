@@ -43,7 +43,7 @@ jQuery('.css-chart').delegate('a','click',function(){
 // ill mark the ghost browsers with (o) under them
 // these are here only to make it easier to compare year to year.
 
-var twenty10 = ["ie7","ie8","ie9","ff35","ff37","op","sa","ch"].reverse();
+var twenty10 = ["ie7","ie8","ie9","ff35","ff40","op","sa","ch"].reverse();
 
 
 var twenty09 = ["ie6","ie7","ie8","ff20","ff30","op96","sa32","ch2"].reverse();
