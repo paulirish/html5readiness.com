@@ -198,6 +198,10 @@
       $("#container").removeClass().addClass($(this).attr("class")); 
       return false;
   }).last().click();
+  
+  jQuery('#body a').click(function(e){
+      e.preventDefalut();
+  });
 
 
   jQuery('.css-chart').delegate('a','click',function(){
