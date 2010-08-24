@@ -199,8 +199,41 @@
       return false;
   }).last().click();
   
+  var linkref = [
+      null,
+	  'http://www.w3.org/TR/css3-background/',
+	  'http://www.w3.org/TR/css3-mediaqueries/',
+	  'http://www.w3.org/TR/CSS21/tables.html',
+	  'http://www.w3.org/TR/css3-transitions/',
+	  'http://www.w3.org/TR/css3-webfonts/',
+	  'http://www.w3.org/TR/css3-flexbox/',
+	  'http://www.w3.org/TR/CSS21/generate.html',
+	  'http://www.w3.org/TR/css3-2d-transforms/',
+	  'http://www.w3.org/TR/css3-transitions/',
+	  'http://www.w3.org/TR/css3-background/#background-image',
+	  'http://www.w3.org/TR/css3-3d-transforms/',
+	  'http://www.ietf.org/rfc/rfc2397.txt',
+	  'http://www.w3.org/TR/IndexedDB/',
+	  'http://www.w3.org/TR/css3-background/#the-border-radius',
+	  'http://www.w3.org/TR/selectors-api/',
+	  'http://www.w3.org/TR/webstorage/#storage',
+	  'http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#audio',
+	  'http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#video',
+	  'http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#the-canvas-element',
+	  'http://www.whatwg.org/specs/web-apps/current-work/multipage/dnd.html#dnd',
+	  'http://www.whatwg.org/specs/web-workers/current-work/',
+	  'http://www.w3.org/TR/webdatabase/',
+	  'http://www.whatwg.org/specs/web-apps/current-work/multipage/forms.html',
+	  'http://www.w3.org/TR/SVG/filters.html',
+	  'http://www.w3.org/TR/geolocation-API/',
+	  'http://www.w3.org/Graphics/SVG/',
+	  'http://www.whatwg.org/specs/web-apps/current-work/multipage/editing.html#contenteditable',
+	  'http://www.w3.org/TR/cors/'
+  ];
+  
   jQuery('#body a').click(function(e){
-      e.preventDefalut();
+      e.preventDefault();
+	  window.location = linkref[jQuery(this).attr('href').split('-')[1]];
   });
 
 
