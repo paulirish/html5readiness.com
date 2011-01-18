@@ -147,7 +147,9 @@
     </div>
     <div id="footer">
 			<p>From the asylum run by <a href="http://paulirish.com">Paul Irish</a> and <a href="http://nimbupani.com">Divya Manian</a> | <a href="http://nimbupani.com/notes-from-html5-readiness-hacking.html">About this site</a></p>
+			<p><img id=html5logo src="assets/HTML5_Logo.svg" width="80"></p>
     </div>
+    
   </div>
   <!-- JavaScript -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
@@ -268,7 +270,7 @@
   jQuery(function(){
 
     $('<label><input type="checkbox">Fixed browser positions</label>')
-      .one('change',syncPositions).wrap('<p>').parent().appendTo('#footer');
+      .one('change',syncPositions).wrap('<p>').parent().prependTo('#footer');
 
 
   })
