@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+  <meta charset="utf-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" >
   
   <title>HTML5 Readiness</title>
@@ -12,21 +12,10 @@
 
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" >
 	
-    
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="" >
 
-	<!-- iPhone/iPad Icon -->
-	<link rel="apple-touch-icon" href="" >	
-  
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" >
-	                         
-  <!-- For the less-enabled mobile browsers like Opera Mini 
-	<link rel="stylesheet" type="text/css" media="handheld" href="css/mobile.css" > 	
-      -->	
-	
-  <!-- JavaScript at the bottom -->
+
 
   
   <script type="text/javascript">
@@ -46,8 +35,20 @@
   <div id="container">
     <div id="header">
         <h1><b>HTML5</b> &amp; <i>CSS3</i> Readiness</h1>
-        <h3><a href="#" class="twenty08">2008</a> / <a href="#" class="twenty09">2009</a> / <a href="#" class="twenty10">2010</a></h3> 
+        <h3><a href="#" class="twenty08">2008</a> / <a href="#" class="twenty09">2009</a> / <a href="#" class="twenty10">2010</a> / <a href="#" class="twenty11">2011</a></h3> 
 				<ul>
+				  <li class="twenty11">
+						<ul>
+							<li><b class="ie7"></b> IE 7</li>					
+							<li><b class="ie8"></b> IE 8</li>
+							<li><b class="ie9"></b> IE 9</li>                           
+							<li><b class="ff36"></b> Firefox 3.6</li>					
+							<li><b class="ff40"></b> Firefox 4.0</li>			
+							<li><b class="op"></b> Opera 11</li>   					
+							<li><b class="sa"></b> Safari 5</li>					
+							<li><b class="ch"></b> Chrome </li>												
+						</ul>
+					</li>
 					<li class="twenty10">
 						<ul>
 							<li><b class="ie7"></b> IE 7</li>					
@@ -154,10 +155,10 @@
   <!-- JavaScript -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script >
-  
+
+  // e-egg.
   jQuery(document).bind('DOMMouseScroll mousewheel', function(e, delta) {
 
-      //return;
       var newval,
           num = $('div.css-chart p').css('padding-left');
 
@@ -176,9 +177,9 @@
           .appendTo(document.body);
 
       e.preventDefault();
-
-
   });
+  
+  
 
   jQuery("h3 a").click(function() { 
       $(this).siblings().andSelf().removeClass('selected').end().end().addClass('selected');
@@ -228,7 +229,6 @@
 
     var isTouch = "ontouchstart" in document.documentElement || ("onMozTouchDown" in document.documentElement && "multitouchdata" in document);
 
-
     if (isTouch) return true;
     return false;
   })
@@ -236,6 +236,9 @@
 
   // ill mark the ghost browsers with (o) under them
   // these are here only to make it easier to compare year to year.
+
+  var twenty11 = ["ie7","ie8","ie9","ff36","ff40","op","sa","ch"].reverse();
+
 
   var twenty10 = ["ie7","ie8","ie9","ff35","ff40","op","sa","ch"].reverse();
 
