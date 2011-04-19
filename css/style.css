@@ -162,6 +162,11 @@ div.css-chart p em b { opacity: 0; -webkit-transition: opacity .4s ease-in; -moz
 .twenty09 div.css-chart p em.twenty09 b, 
 .twenty08 div.css-chart p em.twenty08 b { opacity: 1; }
 
+
+/* quick kills */
+#body .twenty10 .ie9,
+#footer p label   { display:none!important;}
+
 div.css-chart p a { display: block; width: 100%; height: 100%; font-weight: normal; -webkit-transition: none; position: relative; }
 div.css-chart p i { opacity: 0; position: absolute; top: 0; right: 284px; width: 400px; z-index: 4; display: block; height: auto; color: #f2efde; padding: 10px; text-align: center; border-radius: 0.5em; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; text-shadow: 1px 1px 0 black, 2px 2px 0 black, 3px 3px 0 black, 4px 4px 0 black, 5px 5px 0px black; -webkit-transition: opacity 0.2s ease-in; -moz-transition: opacity 0.2s ease-in; -o-transition: opacity 0.2s ease-in; text-transform: uppercase; font-size: 28px; }
 div.css-chart p:hover i { opacity: 1; }
@@ -174,7 +179,10 @@ b.ie9 { background-color: rgba(233, 83, 120, 0.6); }
 b.ff20 { background-color: rgba(66, 147, 194, 0.6); }
 b.ff30 { background-color: rgba(74, 188, 241, 0.6); }
 b.ff35 { background-color: rgba(59, 144, 175, 0.6); }
-b.ff40 { background-color: rgba(69, 167, 203, 0.6); }
+b.ff36 { background-color: rgba(69, 167, 203, 0.6); }
+
+b.ff40 { background-color: hsla(193, 70%, 57%, 0.6); }  /* HSLa ftwww */
+
 b.op95 { background-color: rgba(161, 45, 13, 0.6); }
 b.op96 { background-color: rgba(197, 46, 16, 0.6); }
 b.op { background-color: rgba(226, 79, 45, 0.6); }
