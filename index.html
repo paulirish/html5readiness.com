@@ -13,9 +13,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+  <link rel="stylesheet" media="screen" href="css/style.css">
 
-  <script type="text/javascript">
+  <script>
   // http://paulirish.com/2009/avoiding-the-fouc-v3/ && http://remysharp.com/2009/01/07/html5-enabling-script
   // alternatively using Moderizr does both of these.
   (function(B,C){B[C]=B[C].replace(/\bno-js\b/,'js');if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})(document.documentElement,'className');
@@ -51,7 +51,6 @@
               <li><b class="ie6"></b> IE 6</li>
               <li><b class="ie7"></b> IE 7</li>
               <li><b class="ie8"></b> IE 8</li>
-
               <li><b class="ff35"></b> Firefox 3.5</li>
               <li><b class="ff36"></b> Firefox 3.6</li>
               <li><b class="op"></b> Opera 11</li>
@@ -178,8 +177,7 @@
       }
 
       $('style.padleft').remove();
-      $('<style class="padleft"> div.css-chart p { padding-left : '+newval+'px; } div.css-chart p i { width : '+2*newval+'px; } </style>')
-          .appendTo(document.body);
+      $('<style class="padleft"> div.css-chart p { padding-left : '+newval+'px; } div.css-chart p i { width : '+2*newval+'px; } </style>').appendTo(document.body);
 
       e.preventDefault();
   });
