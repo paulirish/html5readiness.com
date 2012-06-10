@@ -159,7 +159,7 @@ div.css-chart p.css3 { background: rgba(74, 65, 70, 0.1); }
 div.css-chart p.css3:hover { background: rgba(190, 211, 100, 0.2); }
 div.css-chart p em { position: absolute; bottom: 0; left: 0; width: 100%; height: 23px; }
 div.css-chart p em b { opacity: 0; -webkit-transition: opacity 1s ease-in; -moz-transition: opacity 1s ease-in; -ms-transition: opacity 1s ease-in; -o-transition: opacity 1s ease-in; }
-.twenty11 div.css-chart p em.twenty11 b, .twenty10 div.css-chart p em.twenty10 b, .twenty09 div.css-chart p em.twenty09 b, .twenty08 div.css-chart p em.twenty08 b { opacity: 1; }
+.twenty12 div.css-chart p em.twenty12 b, .twenty11 div.css-chart p em.twenty11 b, .twenty10 div.css-chart p em.twenty10 b, .twenty09 div.css-chart p em.twenty09 b, .twenty08 div.css-chart p em.twenty08 b { opacity: 1; }
 div.css-chart p a { display: block; width: 100%; height: 100%; font-weight: normal; -webkit-transition: none; position: relative; }
 div.css-chart p i { opacity: 0; position: absolute; top: 0; right: 284px; width: 400px; z-index: 4; display: block; height: auto; color: #f2efde; padding: 10px; text-align: center; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; border-radius: 0.5em; text-shadow: 1px 1px 0 black, 2px 2px 0 black, 3px 3px 0 black, 4px 4px 0 black, 5px 5px 0px black; -webkit-transition: opacity 0.2s ease-in; -moz-transition: opacity 0.2s ease-in; -ms-transition: opacity 0.2s ease-in; -o-transition: opacity 0.2s ease-in; text-transform: uppercase; font-size: 28px; }
 div.css-chart p:hover i { opacity: 1; }
@@ -169,6 +169,7 @@ b.ie6 { background-color: rgba(218, 168, 192, 0.6); }
 b.ie7 { background-color: rgba(222, 146, 159, 0.6); }
 b.ie8 { background-color: rgba(131, 72, 92, 0.6); }
 b.ie9 { background-color: rgba(233, 83, 120, 0.6); }
+b.ie10 { background-color: rgba(255, 96, 150, 0.6); }
 b.ff20 { background-color: rgba(66, 147, 194, 0.6); }
 b.ff30 { background-color: rgba(74, 188, 241, 0.6); }
 b.ff35 { background-color: rgba(59, 144, 175, 0.6); }
@@ -186,7 +187,7 @@ b.sa { background-color: rgba(251, 231, 98, 0.6); }
 ul { position: fixed; top: 40px; left: 40px; width: 108px; }
 ul li li { opacity: 0; -webkit-transition: opacity 1s ease-in; -moz-transition: opacity 1s ease-in; -ms-transition: opacity 1s ease-in; -o-transition: opacity 1s ease-in; }
 ul li { list-style: none; padding: 0 0 0.5em 0; width: 200px; float: left; text-transform: uppercase; }
-.twenty11 ul .twenty11 li, .twenty10 ul .twenty10 li, .twenty09 ul .twenty09 li, .twenty08 ul .twenty08 li { opacity: 1; }
+.twenty12 ul .twenty12 li, .twenty11 ul .twenty11 li, .twenty10 ul .twenty10 li, .twenty09 ul .twenty09 li, .twenty08 ul .twenty08 li { opacity: 1; }
 
 li b { display: inline-block; width: 20px; height: 20px; -webkit-border-radius: 20em; -moz-border-radius: 20em; border-radius: 20em; }
 
