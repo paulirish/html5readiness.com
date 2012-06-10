@@ -11,11 +11,6 @@
   -ms-transform-origin: $x $y
   -o-transform-origin: $x $y
 
-=border-radius($rad)
-  -webkit-border-radius: $rad
-  -moz-border-radius: $rad
-  border-radius: $rad
-
 =transition($property, $time, $rule)
   -webkit-transition: $property $time $rule
   -moz-transition: $property $time $rule
@@ -41,7 +36,6 @@ html
 
 body
   background: #78909c
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #51545b), color-stop(1, #78909c))
   +linear-gradient(#51545b, #78909c)
   color: #f2efde
   font-family: "Gill Sans", Calibri, "DejaVu Sans", sans-serif
@@ -61,7 +55,6 @@ a.selected
 
 
 div.css-chart
-  background-image: -webkit-gradient(radial, 482 482, 250, 480 484, 400, from(rgba(90, 100, 112, 0.5)), to(rgba(0, 0, 0, 0)))
   +radial-gradient(482px 482px, rgba(90, 100, 112, 0.5), 250px, rgba(0,0,0,0), 400px)
   margin: 0 auto 0 auto
   width: 964px
@@ -129,7 +122,7 @@ div.css-chart
       color: #f2efde
       padding: 10px
       text-align: center
-      +border-radius(0.5em)
+      border-radius: 0.5em
       text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000, 5px 5px 0px #000
       +transition(opacity, 0.2s, ease-in)
       text-transform: uppercase
@@ -217,7 +210,7 @@ li b
   display: inline-block
   width: 20px
   height: 20px
-  +border-radius(20em)
+  border-radius: 20em
 
 
 @for $i from 1 through 29
