@@ -119,7 +119,7 @@ td { vertical-align:top; }
 td img { vertical-align:top; }
 
 /* for image replacement */
-.ir { display:block; text-indent:-999px; overflow:hidden; background-repeat: none; }
+.ir { display:block; text-indent:-999px; overflow:hidden; background-repeat: no-repeat; }
 
 .hidden { display:none; visibility:hidden; } /* Hide for both screenreaders and browsers */
 .visuallyhidden { position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; } /* Hide only visually, but have it available for screenreaders http://www.webaim.org/techniques/css/invisiblecontent/ */
