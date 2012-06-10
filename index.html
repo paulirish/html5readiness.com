@@ -169,7 +169,7 @@
 
   </div>
   <!-- JavaScript -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script>
 
   // e-egg.
@@ -178,7 +178,7 @@
       var newval,
           num = $('div.css-chart p').css('padding-left');
 
-      delta = delta || e.detail || e.wheelDelta;
+      delta = delta || e.originalEvent.detail || e.originalEvent.wheelDelta;
 
       if (delta > 0 || e.which == 38) {
           newval = parseFloat(num) + 10 * (e.shiftKey ? .1 : 1);
