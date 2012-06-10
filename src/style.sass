@@ -14,14 +14,14 @@
 =transition($property, $time, $rule)
   -webkit-transition: $property $time $rule
   -moz-transition: $property $time $rule
-  -ms-transition: $property $time $rule
   -o-transition: $property $time $rule
+  transition: $property $time $rule
 
 =linear-gradient($top, $btm)
   background-image: -webkit-linear-gradient($top, $btm)
   background-image: -moz-linear-gradient($top, $btm)
-  background-image: -ms-linear-gradient($top, $btm)
   background-image: -o-linear-gradient($top, $btm)
+  background-image: linear-gradient($top, $btm)
 
 =radial-gradient($position, $color1, $rad1, $color2, $rad2)
   background-image: -webkit-radial-gradient($position, circle, $color1 $rad1, $color2 $rad2)
@@ -107,6 +107,9 @@ div.css-chart
       height: 100%
       font-weight: normal
       -webkit-transition: none
+      -moz-transition: none
+      -o-transition: none
+      transition: none
       position: relative
 
 
