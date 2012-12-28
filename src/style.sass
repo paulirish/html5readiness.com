@@ -1,33 +1,24 @@
 =transform($deg, $x, $y)
   -webkit-transform: rotate($deg)
-  -moz-transform: rotate($deg)
   -ms-transform: rotate($deg)
-  -o-transform: rotate($deg)
   +transform-origin($x, $y)
 
 =transform-origin($x, $y)
   -webkit-transform-origin: $x $y
-  -moz-transform-origin: $x $y
   -ms-transform-origin: $x $y
-  -o-transform-origin: $x $y
+  transform-origin: $x $y
 
 =transition($property, $time, $rule)
   -webkit-transition: $property $time $rule
-  -moz-transition: $property $time $rule
-  -o-transition: $property $time $rule
   transition: $property $time $rule
 
 =linear-gradient($top, $btm)
   background-image: -webkit-linear-gradient($top, $btm)
-  background-image: -moz-linear-gradient($top, $btm)
-  background-image: -o-linear-gradient($top, $btm)
   background-image: linear-gradient($top, $btm)
 
 =radial-gradient($position, $color1, $rad1, $color2, $rad2)
   background-image: -webkit-radial-gradient($position, circle, $color1 $rad1, $color2 $rad2)
-  background-image: -moz-radial-gradient($position, circle, $color1 $rad1, $color2 $rad2)
-  background-image: -ms-radial-gradient($position, circle, $color1 $rad1, $color2 $rad2)
-  background-image: -o-radial-gradient($position, circle, $color1 $rad1, $color2 $rad2)
+  background-image: radial-gradient(circle at $position, $color1 $rad1, $color2 $rad2)
 
 $barheight: 23px
 
@@ -107,8 +98,6 @@ div.css-chart
       height: 100%
       font-weight: normal
       -webkit-transition: none
-      -moz-transition: none
-      -o-transition: none
       transition: none
       position: relative
 
@@ -218,10 +207,10 @@ li b
 
 @for $i from 1 through 29
   #ray-#{$i}
-    +transform((-6.429deg*($i - 1)), 0%, 50%)
+    +transform(((-180deg / 28)*($i - 1)), 0%, 50%)
 
     i
-      +transform((6.429deg*($i - 1)), 50%, 50%)
+      +transform(((180deg / 28)*($i - 1)), 50%, 50%)
 
 
 #header
@@ -268,10 +257,15 @@ li b
     text-transform: uppercase
 
 
-\::-moz-selection, ::selection
+=selection
   background: #ff5e99
   color: white
   text-shadow: none
+
+\::-moz-selection
+  +selection
+::selection
+  +selection
 
 /* http://twitter.com/miketaylr/status/12228805301
 /* http://j.mp/webkit-tap-highlight-color
@@ -279,18 +273,10 @@ li b
 a:link
   -webkit-tap-highlight-color: #ff5e99
 
-@media all and (orientation:portrait)
-  /* Style adjustments for portrait mode goes here
-
-
-@media all and (orientation:landscape)
-  /* Style adjustments for landscape mode goes here
-
-
 @media screen and (max-device-width: 480px)
   /* All Capable Mobile Browser (Opera Mobile, iPhone Safari, Android Chrome) CSS goes here
   html
-    -webkit-text-size-adjust: none   /* Prevent iPhone from adjusting font size */
+    -webkit-text-size-adjust: 100%   /* Prevent iPhone from adjusting font size */
 
   p:target i
     opacity: 1 /* Since iPhone does not support hover */
