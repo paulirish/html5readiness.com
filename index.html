@@ -167,7 +167,7 @@
         |
         <a href="http://nimbupani.com/notes-from-html5-readiness-hacking.html">About this site</a>
 
-        <p>(Created by <a href="http://paulirish.com">Paul Irish</a> & <a href="http://nimbupani.com">Divya Manian</a>)
+        <p>(Created by <a href="http://paulirish.com">Paul Irish</a> &amp; <a href="http://nimbupani.com">Divya Manian</a>)
 
         <p><img id=html5logo src="assets/HTML5_Logo.svg" width="80"></p>
     </div>
@@ -178,12 +178,11 @@
   <script>
 
   // e-egg.
-  jQuery(document).bind('DOMMouseScroll mousewheel', function(e, delta) {
-
+  jQuery(document).bind('DOMMouseScroll mousewheel', function (e, delta) {
       var newval,
           num = $('div.css-chart p').css('padding-left');
 
-      delta = delta || e.originalEvent.detail || e.originalEvent.wheelDelta;
+      var delta = delta || e.originalEvent.detail || e.originalEvent.wheelDelta;
 
       if (delta > 0 || e.which == 38) {
           newval = parseFloat(num) + 10 * (e.shiftKey ? .1 : 1);
@@ -199,11 +198,9 @@
       e.preventDefault();
   });
 
-
-
-  jQuery("h3 a").click(function() {
+  jQuery('h3 a').click(function () {
       $(this).siblings().andSelf().removeClass('selected').end().end().addClass('selected');
-      $("#container").removeClass().addClass($(this).attr("class"));
+      $('#container').removeClass().addClass($(this).attr('class'));
       return false;
   }).last().click();
 
@@ -240,67 +237,52 @@
     'http://www.whatwg.org/specs/web-apps/current-work/multipage/parsing.html#parsing'
   ];
 
-  jQuery('#body a').click(function(e){
+  jQuery('#body a').click(function (e) {
     e.preventDefault();
     window.location = linkref[jQuery(this).attr('href').split('-')[1]];
   });
 
-
-  jQuery('.css-chart').delegate('a','click',function(){
-
-    var isTouch = "ontouchstart" in document.documentElement;
-
+  jQuery('.css-chart').delegate('a', 'click', function () {
+    var isTouch = 'ontouchstart' in document.documentElement;
     if (isTouch) return true;
     return false;
-  })
-
+  });
 
   // ill mark the ghost browsers with (o) under them
   // these are here only to make it easier to compare year to year.
 
-  var twenty12 = ["ie8","ie9","ie10","ff36","ff","op","sa","ch"].reverse();
-
-
-  var twenty11 = ["ie7","ie8","ie9","ff36","ff","op","sa","ch"].reverse();
-
-
-  var twenty10 = ["ie6","ie7","ie8","ff35","ff36","op","sa","ch"].reverse();
-
-
-  var twenty09 = ["ie6","ie7","ie8","ff20","ff30","op96","sa32","ch2"].reverse();
-
-
-  var twenty08 = ["ie5","ie6","ie7","ff1","ff20","op95","sa31","chX"].reverse();
+  var twenty12 = ['ie8','ie9','ie10','ff36','ff','op','sa','ch'].reverse();
+  var twenty11 = ['ie7','ie8','ie9','ff36','ff','op','sa','ch'].reverse();
+  var twenty10 = ['ie6','ie7','ie8','ff35','ff36','op','sa','ch'].reverse();
+  var twenty09 = ['ie6','ie7','ie8','ff20','ff30','op96','sa32','ch2'].reverse();
+  var twenty08 = ['ie5','ie6','ie7','ff1','ff20','op95','sa31','chX'].reverse();
   //               (o)               (o)                        (o)
 
-
   // thx to deepak jois for all the smarts of this.
-  function syncPositions(){
-    var rays = document.querySelectorAll(".css-chart > p em");
+  function syncPositions() {
+    var rays = document.querySelectorAll('.css-chart > p em');
     for (var i = 0; i < rays.length; i++) {
       var ray = rays[i];
       for (var j = 0; j < window[ray.className].length; j++) {
         var curr = ray.children[j];
         if (curr && curr.className != window[ray.className][j]) {
-          var b = document.createElement("b");
+          var b = document.createElement('b');
           b.className = 'ghostorunsupported';
           ray.insertBefore(b, curr);
         }
       }
     }
 
-    $('input:checkbox').change(function(){
+    $('input:checkbox').change(function () {
       $('.ghostorunsupported').toggle();
-    })
+    });
   }
 
   jQuery(function(){
-
     $('<label><input type="checkbox">Fixed browser positions</label>')
       .one('change',syncPositions).wrap('<p>').parent().prependTo('#footer');
-  })
+  });
   </script>
-
 
   <script>
     var _gaq = _gaq || [];
@@ -309,16 +291,15 @@
     _gaq.push(['_setDomainName','none']);
     _gaq.push(['_setAllowLinker','true']);
 
-    (function() {
+    (function () {
       var ga = document.createElement('script'),
           elem = document.head || document.documentElement;   // FUCK YAH UNIMPLEMENTED HTML5 HAWTNESS
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
           'http://www') + '.google-analytics.com/ga.js';
       ga.setAttribute('async', 'true');
-      setTimeout(function(){ elem.insertBefore(ga, elem.firstChild); },100);
+      setTimeout(function () { elem.insertBefore(ga, elem.firstChild); }, 100);
     })();
   </script>
-
 
 </body>
 </html>
