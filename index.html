@@ -248,7 +248,7 @@
 
   jQuery('.css-chart').delegate('a','click',function(){
 
-    var isTouch = "ontouchstart" in document.documentElement || ("onMozTouchDown" in document.documentElement && "multitouchdata" in document);
+    var isTouch = "ontouchstart" in document.documentElement;
 
     if (isTouch) return true;
     return false;
