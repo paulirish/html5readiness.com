@@ -24,7 +24,7 @@
 $barheight: 23px
 
 html
-  background: #78909C
+  background: #78909c
 
 body
   background: #78909c
@@ -205,13 +205,13 @@ li b
   height: 20px
   border-radius: 20em
 
-
-@for $i from 1 through 29
+$rays: 29
+@for $i from 1 through $rays
   #ray-#{$i}
-    +transform(((-180deg / 28)*($i - 1)), 0%, 50%)
+    +transform(((-180deg / ($rays - 1))*($i - 1)), 0%, 50%)
 
     i
-      +transform(((180deg / 28)*($i - 1)), 50%, 50%)
+      +transform(((180deg / ($rays - 1))*($i - 1)), 50%, 50%)
 
 
 #header
@@ -244,7 +244,7 @@ li b
     z-index: 10
 
 
-/* quick kills
+/* quick kills */
 #body .twenty10 .ie9,
 #footer p label
   display: none !important
@@ -268,14 +268,14 @@ li b
 ::selection
   +selection
 
-/* http://twitter.com/miketaylr/status/12228805301
-/* http://j.mp/webkit-tap-highlight-color
+/* http://twitter.com/miketaylr/status/12228805301 */
+/* http://j.mp/webkit-tap-highlight-color */
 
 a:link
   -webkit-tap-highlight-color: #ff5e99
 
 @media screen and (max-device-width: 480px)
-  /* All Capable Mobile Browser (Opera Mobile, iPhone Safari, Android Chrome) CSS goes here
+  /* All Capable Mobile Browser (Opera Mobile, iPhone Safari, Android Chrome) CSS goes here */
   html
     -webkit-text-size-adjust: 100%   /* Prevent iPhone from adjusting font size */
 
