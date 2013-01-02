@@ -36,32 +36,9 @@ body { line-height:1; }
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section { display:block; }
 
-nav ul { list-style:none; }
-
-blockquote, q { quotes:none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after { content:''; content:none; }
-
 a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
 
-/* change colours to suit your needs */
-ins { background-color:#ff9; color:#000; text-decoration:none; }
-
-/* change colours to suit your needs */
-mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
-
-del { text-decoration: line-through; }
-
-abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
-
-table { border-collapse:collapse; border-spacing:0; }
-
-/* change border colour to suit your needs */
-hr { display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0; }
-
 input, select { vertical-align:middle; }
-
 
 /*
 fonts.css from the YUI Library: http://developer.yahoo.com/yui/
@@ -69,26 +46,12 @@ refer to http://developer.yahoo.com/yui/fonts/ for font sizing
 */
 body { font:13px arial,helvetica,clean,sans-serif; *font-size:small; *font:x-small; }
 
-table { font-size:inherit; font:100%; }
-
 select, input, textarea { font:99% arial,helvetica,clean,sans-serif; }
-
-pre, code { font:115% monospace; *font-size:100%; }
 
 body * { line-height:1.22em; }
 
-
 /* always force a scrollbar in non-IE */
 html { overflow-y: scroll; }
-
-/* make buttons play nice in IE: http://www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
-button {  width: auto; overflow: visible; }
-
-
-/* bicubic resizing for non-native sized IMG: http://code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
-.ie7 img { -ms-interpolation-mode: bicubic; }
-
-
 
 /* styling the basics.
    original author: paul irish
@@ -98,8 +61,6 @@ body, select, input, textarea { color:#444; /* looks better than black: http://t
 
 strong, th, h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 
-h5 { font-size:85%; margin:8px 0 1px; }
-h4 { font-size:92%; margin:10px 0 2px; }
 h3 { font-size:107%; margin:13px 0 3px; }
 h2 { font-size:122%; margin:15px 0 3px; }
 h1 { font-size:136%; margin:0 0 10px; }
@@ -111,34 +72,8 @@ a:visited  { color:#607890; }
 a:hover { color:#036; }
 
 ul { margin-left:30px; }
-ol { margin-left:30px; list-style-type: decimal; }
 
 small { font-size:85%; }
 
-td { vertical-align:top; }
-td img { vertical-align:top; }
-
-/* for image replacement */
-.ir { display:block; text-indent:-999px; overflow:hidden; background-repeat: none; }
-
-.hidden { display:none; visibility:hidden; } /* Hide for both screenreaders and browsers */
-.visuallyhidden { position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; } /* Hide only visually, but have it available for screenreaders http://www.webaim.org/techniques/css/invisiblecontent/ */
-.invisible { visibility: hidden; }
-
-
-
-
 .css-chart p a:focus,
 .css-chart p a:active { outline: 0;}
-
-/*
-	===================================
-	>> CSS BUG HACKS <<
-	===================================
-*/
-.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
-.clearfix { display: inline-block; }
-/* Hides from IE-mac \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-/* End hide from IE-mac */
