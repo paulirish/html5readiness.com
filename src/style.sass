@@ -21,7 +21,7 @@
   background-image: -webkit-radial-gradient($position, circle, $color1 $rad1, $color2 $rad2)
   background-image: radial-gradient(circle at $position, $color1 $rad1, $color2 $rad2)
 
-$barheight: 23px
+$barheight: 22px
 
 html
   background: #78909c
@@ -45,9 +45,8 @@ a:hover,
 a.selected
   color: rgb(251, 231, 98)
 
-
 div.css-chart
-  +radial-gradient(482px 482px, rgba(90, 100, 112, 0.5), 250px, rgba(0,0,0,0), 400px)
+  +radial-gradient(482px 519px, rgba(90, 100, 112, 0.5), 250px, rgba(0,0,0,0), 400px)
   margin: 0 auto 0 auto
   width: 964px
   height: 530px
@@ -102,7 +101,6 @@ div.css-chart
       transition: none
       position: relative
 
-
     i
       opacity: 0
       position: absolute
@@ -130,7 +128,6 @@ div.css-chart
       display: block
       height: $barheight
       float: left
-
 
 b
   &.ie6
@@ -198,7 +195,6 @@ ul
   .twenty08 & .twenty08 li
     opacity: 1
 
-
 li b
   display: inline-block
   width: 20px
@@ -212,7 +208,6 @@ $rays: 29
 
     i
       +transform(((180deg / ($rays - 1))*($i - 1)), 50%, 50%)
-
 
 #header
   h1, h3
@@ -243,12 +238,10 @@ $rays: 29
     width: 160px
     z-index: 10
 
-
 /* quick kills */
 #body .twenty10 .ie9,
 #footer p label
   display: none !important
-
 
 #footer
   margin-top: 26px
@@ -256,7 +249,6 @@ $rays: 29
   p
     text-align: center
     text-transform: uppercase
-
 
 =selection
   background: #ff5e99
@@ -277,7 +269,7 @@ a:link
 @media screen and (max-device-width: 480px)
   /* All Capable Mobile Browser (Opera Mobile, iPhone Safari, Android Chrome) CSS goes here */
   html
-    -webkit-text-size-adjust: 100%   /* Prevent iPhone from adjusting font size */
+    -webkit-text-size-adjust: 100% /* Prevent iPhone from adjusting font size */
 
   p:target i
     opacity: 1 /* Since iPhone does not support hover */
