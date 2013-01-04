@@ -10,18 +10,15 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
+html, body, div, span, iframe,
+h1, h2, h3, p,
+em, img,
+small,
 b, i,
 dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+label,
+aside,
+footer, header, nav, section {
     margin:0;
     padding:0;
     border:0;
@@ -33,8 +30,8 @@ time, mark, audio, video {
 
 body { line-height:1; }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { display:block; }
+article,aside,
+footer,header,nav,section { display:block; }
 
 a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
 
@@ -59,7 +56,7 @@ html { overflow-y: scroll; }
 
 body, select, input, textarea { color:#444; /* looks better than black: http://twitter.com/H_FJ/statuses/11800719859 */ }
 
-strong, th, h1,h2,h3,h4,h5,h6 { font-weight: bold; }
+strong, th, h1,h2,h3 { font-weight: bold; }
 
 h3 { font-size:107%; margin:13px 0 3px; }
 h2 { font-size:122%; margin:15px 0 3px; }
@@ -212,18 +209,18 @@ li b { display: inline-block; width: 20px; height: 20px; border-radius: 20em; }
 #ray-29 { -webkit-transform: rotate(-180deg); -ms-transform: rotate(-180deg); transform: rotate(-180deg); -webkit-transform-origin: 0% 50%; -ms-transform-origin: 0% 50%; transform-origin: 0% 50%; }
 #ray-29 i { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); -webkit-transform-origin: 50% 50%; -ms-transform-origin: 50% 50%; transform-origin: 50% 50%; }
 
-#header h1, #header h3 { text-align: center; text-transform: uppercase; font-size: 3em; font-weight: bold; margin: 0 1em; padding: 0.5em 0 0; text-shadow: 1px 1px 0px black; }
-#header h1 b, #header h3 b { color: #362f34; }
-#header h1 i, #header h3 i { color: #bed364; font-style: normal; }
-#header h3 { margin-top: 5px; font-size: 1.5em; }
-#header h3 a { text-shadow: none; }
-#header aside { position: fixed; top: 40px; right: 40px; width: 160px; z-index: 10; }
+header h1, header h3 { text-align: center; text-transform: uppercase; font-size: 3em; font-weight: bold; margin: 0 1em; padding: 0.5em 0 0; text-shadow: 1px 1px 0px black; }
+header h1 b, header h3 b { color: #362f34; }
+header h1 i, header h3 i { color: #bed364; font-style: normal; }
+header h3 { margin-top: 5px; font-size: 1.5em; }
+header h3 a { text-shadow: none; }
+header aside { position: fixed; top: 40px; right: 40px; width: 160px; z-index: 10; }
 
 /* quick kills */
-#body .twenty13 .ff36, #body .twenty10 .ie9, #footer p label { display: none !important; }
+#body .twenty13 .ff36, #body .twenty10 .ie9, footer p label { display: none !important; }
 
-#footer { margin-top: 26px; width: 100%; }
-#footer p { text-align: center; text-transform: uppercase; }
+footer { margin-top: 26px; width: 100%; }
+footer p { text-align: center; text-transform: uppercase; }
 
 ::-moz-selection { background: #ff5e99; color: white; text-shadow: none; }
 
