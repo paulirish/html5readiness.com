@@ -384,7 +384,7 @@
   <script>
 
   // e-egg.
-  jQuery(document).bind('wheel mousewheel keydown', function (e, delta) {
+  jQuery('.css-chart').attr('tabindex', 0).on('wheel mousewheel keydown', function (e, delta) {
       var newval,
           num = $('div.css-chart p').css('padding-left');
 
