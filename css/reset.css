@@ -41,7 +41,7 @@ input, select { vertical-align:middle; }
 fonts.css from the YUI Library: http://developer.yahoo.com/yui/
 refer to http://developer.yahoo.com/yui/fonts/ for font sizing
 */
-body { font:13px arial,helvetica,clean,sans-serif; *font-size:small; *font:x-small; }
+body { font:13px arial,helvetica,clean,sans-serif; }
 
 select, input, textarea { font:99% arial,helvetica,clean,sans-serif; }
 
