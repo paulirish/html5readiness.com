@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512">
-	<!-- If you would like to customize the color of the badge, these two HSL colors are the primary oran
-	<!-- The second one needs to be +6 hue, +9% saturation, and +3% lightness of the first -->
+    <!-- If you would like to customize the color of the badge, these two HSL colors are the primary oranges -->
+    <!-- The second one needs to be +6 hue, +9% saturation, and +3% lightness of the first -->
     <polygon fill="hsl(196, 50%, 46%)" points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512"/>
     <polygon fill="hsl(202, 59%, 49%)" points="256,480.523 376.03,447.246 404.27,130.894 256,130.894"/>
     <g fill="#EBEBEB">
