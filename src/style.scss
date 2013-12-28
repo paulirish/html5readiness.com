@@ -1,0 +1,310 @@
+@mixin transform($deg, $x, $y) {
+  transform: rotate($deg);
+  @include transform-origin($x, $y);
+}
+
+@mixin transform-origin($x, $y) {
+  transform-origin: $x $y;
+}
+
+@mixin transition($property, $time, $rule) {
+  transition: $property $time $rule;
+}
+
+@mixin linear-gradient($top, $btm) {
+  background-image: linear-gradient($top, $btm);
+}
+
+@mixin radial-gradient($position, $color1, $rad1, $color2, $rad2) {
+  background-image: radial-gradient(circle at $position, $color1 $rad1, $color2 $rad2);
+}
+
+$barheight: 22px;
+
+html {
+  background: #78909c;
+}
+
+body {
+  background: #78909c;
+  @include linear-gradient(#51545b, #78909c);
+  color: #f2efde;
+  font-family: "Gill Sans", Calibri, "DejaVu Sans", sans-serif;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+  @include transition(color, 0.2s, linear);
+}
+
+a:hover,
+a.selected {
+  color: rgb(251, 231, 98);
+}
+
+div.css-chart {
+  @include radial-gradient(482px 519px, rgba(90, 100, 112, 0.5), 250px, rgba(0, 0, 0, 0), 400px);
+  margin: 0 auto 0 auto;
+  width: 964px;
+  height: 530px;
+  position: relative;
+  p {
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 482px;
+    background: rgba(74, 65, 70, 0.1);
+    width: 282px;
+    height: $barheight;
+    border: 0;
+    padding: 0 0 0 200px;
+    @include transition(background, 0.2s, ease-out);
+    &:hover {
+      background: rgba(74, 65, 70, 1);
+    }
+    &.css3 {
+      background: rgba(74, 65, 70, 0.1);
+      &:hover {
+        background: rgba(190, 211, 100, 0.2);
+      }
+    }
+    em {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: $barheight;
+      b {
+        opacity: 0;
+        @include transition(opacity, 1s, ease-in);
+      }
+      .twenty13 &.twenty13,
+      .twenty12 &.twenty12,
+      .twenty11 &.twenty11,
+      .twenty10 &.twenty10,
+      .twenty09 &.twenty09,
+      .twenty08 &.twenty08 {
+        b {
+          opacity: 1;
+        }
+      }
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-weight: normal;
+      transition: none;
+      position: relative;
+    }
+    i {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      right: 284px;
+      width: 400px;
+      z-index: 4;
+      display: block;
+      height: auto;
+      color: #f2efde;
+      padding: 10px;
+      text-align: center;
+      border-radius: 0.5em;
+      text-shadow: 1px 1px 0 black, 2px 2px 0 black, 3px 3px 0 black, 4px 4px 0 black, 5px 5px 0px black;
+      @include transition(opacity, 0.2s, ease-in);
+      text-transform: uppercase;
+      font-size: 28px;
+    }
+    &:hover {
+      i {
+        opacity: 1; // Since iPhone does not support hover
+      }
+    }
+    b {
+      width: 12.5%;
+      display: block;
+      height: $barheight;
+      float: left;
+    }
+  }
+}
+
+b {
+  &.ie6 {
+    background-color: rgba(218, 168, 192, 0.6);
+  }
+  &.ie7 {
+    background-color: rgba(222, 146, 159, 0.6);
+  }
+  &.ie8 {
+    background-color: rgba(131, 72, 92, 0.6);
+  }
+  &.ie9 {
+    background-color: rgba(233, 83, 120, 0.6);
+  }
+  &.ie10 {
+    background-color: rgba(255, 96, 150, 0.6);
+  }
+  &.ff20 {
+    background-color: rgba(66, 147, 194, 0.6);
+  }
+  &.ff30 {
+    background-color: rgba(74, 188, 241, 0.6);
+  }
+  &.ff35 {
+    background-color: rgba(59, 144, 175, 0.6);
+  }
+  &.ff36 {
+    background-color: rgba(69, 167, 203, 0.6);
+  }
+  &.ff {
+    background-color: hsla(193, 70%, 57%, 0.6);
+  }
+  &.op95 {
+    background-color: rgba(161, 45, 13, 0.6);
+  }
+  &.op96 {
+    background-color: rgba(197, 46, 16, 0.6);
+  }
+  &.op {
+    background-color: rgba(226, 79, 45, 0.6);
+  }
+  &.ch2 {
+    background-color: rgba(207, 133, 27, 0.6);
+  }
+  &.ch {
+    background-color: rgba(245, 155, 58, 0.6);
+  }
+  &.sa31 {
+    background-color: rgba(190, 183, 64, 0.6);
+  }
+  &.sa32 {
+    background-color: rgba(216, 184, 73, 0.6);
+  }
+  &.sa {
+    background-color: rgba(251, 231, 98, 0.6);
+  }
+}
+
+ul {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  width: 108px;
+  li li {
+    opacity: 0;
+    @include transition(opacity, 1s, ease-in);
+  }
+  li {
+    list-style: none;
+    padding: 0 0 0.5em 0;
+    width: 200px;
+    float: left;
+    text-transform: uppercase;
+  }
+  .twenty13 & .twenty13 li,
+  .twenty12 & .twenty12 li,
+  .twenty11 & .twenty11 li,
+  .twenty10 & .twenty10 li,
+  .twenty09 & .twenty09 li,
+  .twenty08 & .twenty08 li {
+    opacity: 1;
+  }
+}
+
+li b {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20em;
+}
+
+$rays: 29;
+
+@for $i from 1 through $rays {
+  #ray-#{$i} {
+    @include transform(-180deg / ($rays - 1) * ($i - 1), 0%, 50%);
+    i {
+      @include transform(180deg / ($rays - 1) * ($i - 1), 50%, 50%);
+    }
+  }
+}
+
+header {
+  h1, h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0 1em;
+    padding: 0.5em 0 0;
+    text-shadow: 1px 1px 0px black;
+    b {
+      color: rgb(54, 47, 52);
+    }
+    i {
+      color: rgb(190, 211, 100);
+      font-style: normal;
+    }
+  }
+  h3 {
+    margin-top: 5px;
+    font-size: 1.5em;
+    a {
+      text-shadow: none;
+    }
+  }
+  aside {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 160px;
+    z-index: 10;
+  }
+}
+
+/* quick kills */
+#body .twenty13 .ff36,
+#body .twenty10 .ie9,
+footer p label {
+  display: none !important;
+}
+
+footer {
+  margin-top: 26px;
+  width: 100%;
+  p {
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+::selection {
+  background: #ff5e99;
+  color: white;
+  text-shadow: none;
+}
+
+// http://twitter.com/miketaylr/status/12228805301
+// http://j.mp/webkit-tap-highlight-color
+a:link {
+  -webkit-tap-highlight-color: #ff5e99;
+}
+
+@media screen and (max-device-width: 480px) {
+  // All Capable Mobile Browser (Opera, iOS Safari, Android Chrome) CSS goes here
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  p:target i {
+    opacity: 1; // Since iPhone does not support hover
+  }
+  p.css3:target {
+    background: rgba(190, 211, 100, 0.2);
+  }
+}
