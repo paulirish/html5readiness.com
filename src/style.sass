@@ -1,24 +1,17 @@
 =transform($deg, $x, $y)
-  -webkit-transform: rotate($deg)
-  -ms-transform: rotate($deg)
   transform: rotate($deg)
   +transform-origin($x, $y)
 
 =transform-origin($x, $y)
-  -webkit-transform-origin: $x $y
-  -ms-transform-origin: $x $y
   transform-origin: $x $y
 
 =transition($property, $time, $rule)
-  -webkit-transition: $property $time $rule
   transition: $property $time $rule
 
 =linear-gradient($top, $btm)
-  background-image: -webkit-linear-gradient($top, $btm)
   background-image: linear-gradient($top, $btm)
 
 =radial-gradient($position, $color1, $rad1, $color2, $rad2)
-  background-image: -webkit-radial-gradient($position, circle, $color1 $rad1, $color2 $rad2)
   background-image: radial-gradient(circle at $position, $color1 $rad1, $color2 $rad2)
 
 $barheight: 22px
@@ -97,7 +90,6 @@ div.css-chart
       width: 100%
       height: 100%
       font-weight: normal
-      -webkit-transition: none
       transition: none
       position: relative
 
@@ -252,15 +244,10 @@ footer
     text-align: center
     text-transform: uppercase
 
-=selection
+::selection
   background: #ff5e99
   color: white
   text-shadow: none
-
-\::-moz-selection
-  +selection
-::selection
-  +selection
 
 /* http://twitter.com/miketaylr/status/12228805301 */
 /* http://j.mp/webkit-tap-highlight-color */
