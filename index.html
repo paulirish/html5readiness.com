@@ -369,7 +369,8 @@
   </div>
 
   <!-- JavaScript -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="jquery-2.0.3.min.js"><\/script>')</script>
   <script>
 
   // e-egg.
@@ -394,7 +395,7 @@
   });
 
   jQuery('h3 a').click(function () {
-      $(this).siblings().andSelf().removeClass('selected').end().end().addClass('selected');
+      $(this).siblings().addBack().removeClass('selected').end().end().addClass('selected');
       $('#container').removeClass().addClass($(this).attr('class'));
       return false;
   }).last().click();
